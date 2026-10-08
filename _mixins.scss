@@ -1,0 +1,13 @@
+@mixin product__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 8px;
+}
+@mixin catalog-link {
+  color: #000000;
+  margin-top: 31px;
+  margin-bottom: 64px;
+  display: block;
+}

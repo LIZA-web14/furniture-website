@@ -1,0 +1,93 @@
+@media (max-width: 1024px){
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+
+    }
+
+    .for {
+      &__item {
+        height: 268px;
+      }
+
+    }
+    .content__product {
+    column-gap: 29px;
+    row-gap: 39px;
+
+    }
+
+    .cotainer {
+      position: relative;
+
+    }
+
+    .filter-form {
+        width: 541px;
+        right: 0;
+       
+    }
+
+    .footer__logo {
+      display: none;
+    }
+
+      .footer__main {
+        margin-top: 32px;
+        margin-bottom: 58px;
+      }
+
+    
+    .form {
+      margin-top: 32px;
+      margin-bottom: 58px;
+    }
+    .cart {
+     grid-template-columns: 1fr; /*Контейнер станет в одну колонку.*/
+     row-gap: 32px;
+  }
+  .cart__content {
+    grid-column: 1 / -1; /*Блок с товарами займёт всю ширину строки.Это значит:начать с первой линии и закончить на последней линии*/
+  }
+  .cart-form {
+    grid-column: 1 / -1; /*Форма тоже уйдёт на новую строку и встанет ниже.*/
+    max-width: 376px;/* Если по макету форма не должна растягиваться на всю ширину, а быть более узкой — это ограничит её ширину.*/
+  }
+  .cart__buttons {
+    margin-top: 32px;
+
+  }
+.content-catlog {
+  column-gap: 29px;
+ row-gap: 30px;
+}
+.filter-button-wrapper{
+  position: static;
+}
+.footer__bloc{
+      display: flex;
+       justify-content: space-between;
+    }
+.cart__buttons{
+  margin-bottom: 64px;
+
+}    
+
+}
+
+@media (min-width: 768px) and (max-width: 833px){
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .product{
+      width: 345px;
+    }
+    
+
+    
+}
+    
+
+    

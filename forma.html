@@ -1,0 +1,155 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Знакомство с HTML тегами. Часть №3 (Формы)</title>
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+<body>
+    <form class="filter-form" action="#" method="get">
+        <div class="filter-form__content">
+
+          <fieldset class="filter-form__fieldset">
+
+             <legend class="filter-form__legen" >Сроки доставки</legend>
+
+            <label class="radio-option">
+                <input checked type="radio" value="any" name="delivery_time" > Неважно
+            </label>
+            <label class="radio-option">
+                <input type="radio" value="today" name="delivery_time" > Сегодня
+            </label>
+            <label class="radio-option">
+                <input type="radio" value="tomorrow" name="delivery_time" > Завтра
+            </label>
+            <label class="radio-option">
+                <input type="radio" value="3days" name="delivery_time" > До 3 дней
+            </label>
+            <label class="radio-option">
+                <input type="radio" value="7days" name="delivery_time" > До 7 дней
+            </label>
+
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <legend class="filter-form__legen">Цвет</legend>
+            <div class="color-options">
+
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-wite">
+                <label class="checkbox__label checkbox__label_color-wite" for="color-wite"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-black">
+                <label class="checkbox__label checkbox__label_color-black" for="color-black"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-gray">
+                <label class="checkbox__label checkbox__label_color-gray" for="color-gray"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-red">
+                <label class="checkbox__label checkbox__label_color-red" for="color-red"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-orange">
+                <label class="checkbox__label checkbox__label_color-orange" for="color-orange"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-yellow">
+                <label class="checkbox__label checkbox__label_color-yellow" for="color-yellow"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-green">
+                <label class="checkbox__label checkbox__label_color-green" for="color-green"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-turquoise">
+                <label class="checkbox__label checkbox__label_color-turquoise" for="color-turquoise"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-blue">
+                <label class="checkbox__label checkbox__label_color-blue" for="color-blue"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-blue2">
+                <label class="checkbox__label checkbox__label_color-blue2" for="color-blue2"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-violet">
+                <label class="checkbox__label checkbox__label_color-violet" for="color-violet"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-purple">
+                <label class="checkbox__label checkbox__label_color-purple" for="color-purple"></label>
+            </div>
+            <div class="checkbox color-options__checkbox">
+                <input class="checkbox__input" type="checkbox" id="color-pink">
+                <label class="checkbox__label checkbox__label_color-pin" for="color-pink"></label>
+            </div>
+            
+
+
+
+            </div>
+            
+            
+          </fieldset>
+
+
+          <fieldse class="filter-form__fieldset">
+            <legend class="filter-form__legend">Цена</legend>
+            <div class="range">
+                <label class="range__legend" for="range-legend">от 0 руб. до 100000 руб.</label>
+                <div>
+                    <input class="range__input"  name="range_1" type="range" min="1" max="1000000" value="1" >
+                    <input class="range__input"  name="range_1" type="range" min="1" max="1000000" value="1000000">
+                </div>
+
+            </div>
+
+          </fieldse>
+
+         <fieldset class="Room-type">
+            <legend>Тип комнаты</legend>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="kitchen" value="yes"> Кухня и столовая
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="bathroom" value="yes"> Ванная комната
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="nursery" value="yes"> Детская комната
+            </label >
+            <label class="checkbox-option" > 
+                <input type="checkbox" name="home-office" value="yes"> Домашний офис
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Living-room" value="yes"> Гостиная
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Hallway" value="yes"> Прихожая
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Bedroom" value="yes"> Спальня
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Wardrobe" value="yes"> Гардероб
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Country-house" value="yes"> Дача
+            </label>
+            <label class="checkbox-option"> 
+                <input type="checkbox" name="Light" value="yes"> Свет
+            </label>
+         </fieldset>
+
+        </div>
+        <button type="submit" class="filter-form__button" >Применить</button>
+    </form>
+</body>

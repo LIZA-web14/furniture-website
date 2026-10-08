@@ -1,0 +1,1385 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.filter-form__button:hover {
+  cursor: pointer;
+}
+
+.catalog-controls__select-option:hover {
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  cursor: pointer;
+}
+
+.form__desc-button:hover {
+  cursor: pointer;
+}
+
+.cart-form__button:hover {
+  cursor: pointer;
+}
+
+.cart__clearCart:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.cart__purchase:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.form__desc-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.cart-form__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.filter-form__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.catalog-link:hover {
+  text-decoration: none;
+  color: #888888;
+}
+
+.footer__img img:hover {
+  filter: brightness(0);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+  /* это я задала линию */
+  height: 77px;
+}
+
+.cart__buttons {
+  margin-top: 50px;
+}
+
+.cart__purchase {
+  font-size: 14px;
+}
+
+.menu-mobail {
+  display: none;
+}
+
+a,
+button,
+input {
+  font-family: "Montserrat", "sans-serif";
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.cart-form__button {
+  background: transparent;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header__nav-link {
+  color: white;
+}
+
+.hero-page__wrapper {
+  padding-top: 63px;
+  padding-bottom: 367px;
+  color: white;
+  max-width: 764px;
+}
+
+.for-box {
+  padding-top: 64px;
+}
+
+.for {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 32px;
+}
+
+.for__item {
+  height: 415px;
+  grid-column: span 4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.for__item_big {
+  grid-column: span 6;
+}
+
+.for__item_1 {
+  background-image: url(img/for-1.jpg);
+}
+
+.for__item_2 {
+  background-image: url(img/for-2.jpg);
+}
+
+.for__item_3 {
+  background-image: url(img/for-3.jpg);
+}
+
+.for__item_4 {
+  background-image: url(img/for-4.jpg);
+}
+
+.for__item_5 {
+  background-image: url(img/for-5.jpg);
+}
+
+.header__input {
+  width: 288px;
+  /*  ширина */
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  /* прозраный фон */
+  outline: none;
+  /* Без  outline: none  — синий пунктир при клике */
+  font-size: 16px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+}
+
+.header__input::-moz-placeholder {
+  color: white;
+}
+
+.header__input::placeholder {
+  color: white;
+}
+
+.hero-page {
+  background-image: url("./img/header_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-page__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  max-width: 792px;
+  margin-bottom: 16px;
+}
+
+.hero-page__subtitle {
+  margin-bottom: 16px;
+}
+
+.hero-page__link {
+  margin-bottom: 374px;
+  color: white;
+}
+
+.content {
+  padding-top: 64px;
+}
+
+.content__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.content__product {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  row-gap: 56px;
+}
+
+.for-box__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.product {
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product__img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.product__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.product__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 12px;
+  overflow-wrap: break-word;
+}
+
+.product__box-price {
+  display: flex;
+  gap: 32px;
+}
+
+.product__price {
+  font-weight: 500;
+  font-size: 24px;
+  color: #050505;
+}
+
+.product__price_sail {
+  text-decoration: line-through;
+  /* дает перечеркивание цены */
+  color: #888888;
+}
+
+.catalog-link {
+  color: #000000;
+  margin-top: 31px;
+  margin-bottom: 64px;
+  display: block;
+}
+
+.footer {
+  background-color: #F7F6F6;
+  /*Задаёт цвет фона для блока или текста*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__info {
+  display: flex;
+  gap: 129px;
+  flex-wrap: wrap;
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__img-bloc {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__bloc {
+  width: 792px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-top: 32px;
+  margin-bottom: 131px;
+}
+
+.footer__content {
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.footer__link {
+  color: #888888;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.footer__img {
+  color: #888888;
+  text-decoration: none;
+}
+
+.form {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__desc {
+  font-size: 12px;
+  font-weight: 400px;
+  color: #000;
+}
+
+.form__desc-input {
+  display: block;
+  border: 1px solid #C4C4C4;
+  border-radius: 16px;
+  padding: 12px 17px;
+  width: 100%;
+}
+
+.form__desc-input:focus-visible {
+  outline: none;
+}
+
+/*это что бы не было обводки */
+.form__desc-input::-moz-placeholder {
+  color: #C4C4C4;
+  font-size: 12px;
+}
+.form__desc-input::placeholder {
+  color: #C4C4C4;
+  font-size: 12px;
+}
+
+.form__desc-button {
+  display: block;
+  border: none;
+  background-color: rgba(222, 215, 215, 0.4117647059);
+  border-radius: 16px;
+  width: 100%;
+  padding: 12px 85px;
+  font-size: 12px;
+}
+
+/* Стилизация каталога */
+.hero-page__wrapper_catalog {
+  padding-bottom: 126px;
+}
+
+.catalog {
+  background-image: url("./img/catalog-img.jpg");
+}
+
+.catalog-controls__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-controls__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.content-catlog {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  row-gap: 56px;
+}
+
+.catalog-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* Задаёт две колонки: первая —  1fr  (забирает всё свободное место),
+  вторая —  auto  (подстраивается под размер содержимого, например  select  или кнопка). */
+  align-items: center;
+  /*Выравнивает все элементы внутри grid‑ячеек по вертикали, чтобы они были по центру по высоте контейнера.*/
+  gap: 20px;
+  margin-top: 70px;
+  margin-bottom: 32px;
+}
+
+/* стилизация контейнира фильтрации и кнопки по попульярности */
+.cotainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* кнопка фильтрации */
+.filter-button {
+  font-weight: 500;
+  /* полужирное начертание */
+  background-color: white;
+  border: 1px solid #C4C4C4;
+  max-width: 182px;
+  /* максимальная ширина */
+  width: 100%;
+  /* 100% ширина */
+  padding: 9px 54px 11px 23px;
+  font-size: 16px;
+  border-radius: 50px;
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none"><path d="M8.66028 8.25L2.36094e-05 -1.63133e-06L17.3205 -1.17124e-07L8.66028 8.25Z" fill="black"/></svg>');
+  background-position: calc(100% - 20px);
+  /*Фон будет сдвинут так, чтобы его левый край оказался на  280px  от левого края блока, то есть фон «подвешен» на 20 пикселей от правого края.*/
+  background-repeat: no-repeat;
+  /* без повтора фонового изображения */
+}
+
+/* обнуление стилилей для  */
+.catalog-controls__select-option {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.сatalog-controls__select_popular {
+  width: 227px;
+  padding: 9px 56px 11px 23px;
+  height: 40px;
+  border: 1px solid #C4C4C4;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+.catalog-controls__select-img {
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none"><path d="M8.66028 8.25L2.36094e-05 -1.63133e-06L17.3205 -1.17124e-07L8.66028 8.25Z" fill="black"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.catalog-controls__select_filter {
+  margin-right: 10px;
+}
+
+.product__icons {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  gap: 23px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.product__linke {
+  text-decoration: none;
+}
+
+.product:hover .product__icons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Стилизация формы */
+.filter-form {
+  position: absolute;
+  display: flex;
+  /*flex- контейнер */
+  flex-direction: column;
+  /*выравнивание дочерних элементов по колонке */
+  align-items: flex-start;
+  right: 0;
+  /* позиция справа от родителя */
+  background-color: white;
+  box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+  top: calc(100% + 14px);
+  padding: 40px;
+  gap: 36px;
+  z-index: 10;
+}
+
+.filter-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-form__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px 65px;
+  min-width: 445px;
+  max-height: 548px;
+}
+
+.filter-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 16px;
+  font-size: 14px;
+  max-width: 190px;
+}
+
+.filter-form__legend {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-form__delivery-times {
+  padding-bottom: 16px;
+}
+
+.filter-form__button {
+  align-self: flex-end;
+  width: 190px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #040404;
+}
+
+.radio-option input {
+  margin-right: 10px;
+}
+
+/* радиокнопка*/
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio__input {
+  display: none;
+  /* скрытый элемент*/
+}
+
+.radio__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+}
+
+/* кружок */
+.radio__label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #888888;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* активный radio */
+.radio__input:checked + .radio__label::before {
+  border-color: #000;
+}
+
+/* галочка */
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Ползунок цены */
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.range__input {
+  width: 190px;
+  height: 8px;
+  /*overflow: hidden; скрывает все что выходит за пределы */
+  outline: none;
+  position: absolute;
+  /*Установите для обоих  input  свойство  position: absolute; . Они должны занимать всё пространство контейнера.*/
+}
+
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: none;
+  /* убираем встроенную стилистику и у на как бы все становится не видимым */
+}
+
+.range__input::-webkit-slider-runnable-track {
+  width: 200px;
+  height: 1px;
+  background: #000;
+  /* задаем стиль полосочки */
+}
+
+.range__input:nth-child(2n)::-webkit-slider-runnable-track {
+  background: none;
+  /* второй ползунок без фона */
+}
+
+/*это специальный CSS-псевдоэлемент, который позволяет стилизовать «ползунок» (ручку) в элементе  <input type="range"> */
+.range__input::-webkit-slider-thumb {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background-color: #000;
+  /* черный фон */
+  border: 1px solid #000000;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+  margin-top: -4px;
+}
+
+.range__input::-webkit-slider-thumb {
+  cursor: grabbing;
+  /* куурсор ввиде руки */
+}
+
+.range__input:nth-child(2n)::-webkit-slider-thumb {
+  z-index: 2;
+}
+
+.range__slider {
+  position: relative;
+  height: 8px;
+  width: 190px;
+  display: inline-block;
+}
+
+/* цвет */
+.color-options {
+  display: flex;
+  max-width: 190px;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.color-options__checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.checkbox__label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #888888;
+  position: absolute;
+  left: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  border-color: #000;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.checkbox__label_color-wite::before {
+  border-color: #888888;
+  background-color: #FFFFFF;
+}
+
+.checkbox__label_color-black::before {
+  border-color: #000000;
+  background-color: #000000;
+}
+
+.checkbox__label_color-gray::before {
+  border-color: #737373;
+  background-color: #737373;
+}
+
+.checkbox__label_color-red::before {
+  border-color: #FF0000;
+  background-color: #FF0000;
+}
+
+.checkbox__label_color-orange::before {
+  border-color: #FF7A41;
+  background-color: #FF7A41;
+}
+
+.checkbox__label_color-yellow::before {
+  border-color: #F2CB01;
+  background-color: #F2CB01;
+}
+
+.checkbox__label_color-green::before {
+  border-color: #00BF2A;
+  background-color: #00BF2A;
+}
+
+.checkbox__label_color-turquoise::before {
+  border-color: #1CCC97;
+  background-color: #1CCC97;
+}
+
+.checkbox__label_color-blue::before {
+  border-color: #009FE3;
+  background-color: #009FE3;
+}
+
+.checkbox__label_color-blue2::before {
+  border-color: #000AF8;
+  background-color: #000AF8;
+}
+
+.checkbox__label_color-violet::before {
+  border-color: #6710D6;
+  background-color: #6710D6;
+}
+
+.checkbox__label_color-purple::before {
+  border-color: #9D0DB5;
+  background-color: #9D0DB5;
+}
+
+.checkbox__label_color-lilac::before {
+  border-color: #D89AFF;
+  background-color: #D89AFF;
+}
+
+.checkbox__label_color-pink::before {
+  border-color: #FF65A6;
+  background-color: #FF65A6;
+}
+
+/* тип комнаты */
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.filter-form__checkbox {
+  display: none;
+}
+
+.filter-form__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+}
+
+.filter-form__label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #888888;
+  flex-shrink: 0;
+}
+
+/* активный checkbox */
+.filter-form__checkbox:checked + .filter-form__label::before {
+  border-color: #000;
+}
+
+/* галочка */
+.filter-form__checkbox:checked + .filter-form__label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.img-header {
+  height: 400px;
+  background-image: url(img/cart1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hading-big {
+  margin-top: 127px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+  row-gap: 0;
+}
+.cart__box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 0.5px solid #CACDD8;
+}
+.cart__content {
+  grid-column: span 8;
+}
+.cart__buttons {
+  display: flex;
+  gap: 7px;
+}
+.cart__clearCart {
+  border: 1px solid #000000;
+  border-radius: 50px;
+  width: 200px;
+  height: 37px;
+  background-color: transparent;
+}
+.cart__purchase {
+  border: 1px solid #000000;
+  border-radius: 50px;
+  width: 200px;
+  height: 37px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.cart-form {
+  grid-column: span 4;
+  background: #F7F6F6;
+  border-radius: 20px;
+  padding: 30px;
+}
+.cart-form__bloc {
+  display: grid;
+}
+.cart-form__registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+.cart-form__input {
+  display: grid;
+  align-content: space-around;
+  justify-items: stretch;
+  gap: 40px;
+}
+.cart-form__name {
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.5px solid #CACDD8;
+  font-size: 14px;
+}
+.cart-form__name::-moz-placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__name::placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__phone {
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.5px solid #CACDD8;
+  font-size: 14px;
+}
+.cart-form__phone::-moz-placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__phone::placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__addres {
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.5px solid #CACDD8;
+  font-size: 14px;
+}
+.cart-form__addres::-moz-placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__addres::placeholder {
+  color: #000000;
+  font-size: 14px;
+}
+.cart-form__price {
+  margin-top: 64px;
+  margin-bottom: 154px;
+  display: grid;
+  gap: 15px;
+}
+
+.cart-item {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cart-item + .cart-item {
+  border-top: 0.5px solid #CACDD8;
+}
+.cart-item__left {
+  display: flex;
+  gap: 32px;
+}
+.cart-item__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.cart-item__info {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart-item__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+.cart-item__prise {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #050505;
+}
+.cart-item__linke {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cart-item__favorites {
+  color: #000000;
+  display: block;
+}
+.cart-item__number {
+  width: 71px;
+  height: 51px;
+  left: 739px;
+  top: 525px;
+  background: #F7F6F6;
+  border-radius: 6px;
+  border: none;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 13px;
+  font-weight: 600;
+  padding-top: 11px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.cart-form__total-line {
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-form__price-span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.cart-form__button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  height: 40px;
+  border: 1px solid #040404;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  animation: pulseButton 2s ease 2;
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 268px;
+  }
+  .content__product {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
+  }
+  .cotainer {
+    position: relative;
+  }
+  .filter-form {
+    width: 541px;
+    right: 0;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__main {
+    margin-top: 32px;
+    margin-bottom: 58px;
+  }
+  .form {
+    margin-top: 32px;
+    margin-bottom: 58px;
+  }
+  .cart {
+    grid-template-columns: 1fr; /*Контейнер станет в одну колонку.*/
+    row-gap: 32px;
+  }
+  .cart__content {
+    grid-column: 1/-1; /*Блок с товарами займёт всю ширину строки.Это значит:начать с первой линии и закончить на последней линии*/
+  }
+  .cart-form {
+    grid-column: 1/-1; /*Форма тоже уйдёт на новую строку и встанет ниже.*/
+    max-width: 376px; /* Если по макету форма не должна растягиваться на всю ширину, а быть более узкой — это ограничит её ширину.*/
+  }
+  .cart__buttons {
+    margin-top: 32px;
+  }
+  .content-catlog {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 30px;
+  }
+  .filter-button-wrapper {
+    position: static;
+  }
+  .footer__bloc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart__buttons {
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding-top: 32px;
+    border-bottom: none;
+  }
+  .for-box {
+    padding-top: 32px;
+  }
+  .header__input {
+    display: none;
+  }
+  .header__nav-link {
+    display: none;
+  }
+  .header__logo-img {
+    width: 99px;
+  }
+  .menu-mobail {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .hero-page__title {
+    font-size: 48px;
+    line-height: 59px;
+  }
+  .hero-page__wrapper {
+    text-align: center;
+  }
+  .hero-page__subtitle {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .hero-page__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .for-box__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .for {
+    grid-template-columns: repeat 4, 1fr;
+    gap: 16px;
+  }
+  .for__item {
+    font-size: 28px;
+    line-height: 34px;
+    height: 375px;
+    grid-column: 1/-1;
+  }
+  .for__item_big {
+    height: 244px;
+  }
+  .content__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .footer__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .product__name {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .product__title {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .product__price {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .product {
+    width: 100%;
+  }
+  /*каталог */
+  .catalog-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .catalog-controls__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .сatalog-controls__select_popular {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .catalog-controls__select {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .catalog-controls__title {
+    margin-top: 39px;
+  }
+  .cotainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hading-big {
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+  }
+  .cart__box, .cart-item__img {
+    display: none;
+  }
+  .cart__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart-item__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .cart-item__description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart__clearCart, .cart__purchase {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .cart__clearCart {
+    max-width: 166px;
+  }
+  .cart__purchase {
+    max-width: 163px;
+  }
+  .filter-form__content {
+    width: 190px;
+    min-width: 0;
+    max-height: none;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+  .filter-form {
+    padding: 40px 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}/*# sourceMappingURL=styles.css.map */
